@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollBar?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <Pane prefHeight="447.0" prefWidth="800.0">
+         <children>
+            <TabPane layoutX="14.0" layoutY="14.0" prefHeight="314.0" prefWidth="499.0" tabClosingPolicy="UNAVAILABLE">
+              <tabs>
+                <Tab text="塔/派">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="312.0" prefWidth="499.0" style="-fx-background-color: #e4cdcd;">
+                           <children>
+                              <ImageView fitHeight="109.0" fitWidth="146.0" layoutX="14.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@蘋果塔.jpg" />
+                                 </image></ImageView>
+                              <ImageView fitHeight="109.0" fitWidth="146.0" layoutX="177.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@檸檬塔.jpg" />
+                                 </image></ImageView>
+                              <ImageView fitHeight="109.0" fitWidth="146.0" layoutX="339.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@國王派.jpg" />
+                                 </image></ImageView>
+                              <Label fx:id="good1" layoutX="64.0" layoutY="143.0" text="蘋果派" textFill="#2f4a66">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font></Label>
+                              <Label fx:id="good2" layoutX="227.0" layoutY="143.0" text="檸檬塔" textFill="#2f4a66">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font></Label>
+                              <Label fx:id="good3" layoutX="389.0" layoutY="143.0" text="國王派" textFill="#2f4a66">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font></Label>
+                              <TextField fx:id="text1" alignment="CENTER" layoutX="51.0" layoutY="172.0" prefHeight="23.0" prefWidth="72.0" text="0" />
+                              <TextField fx:id="text2" alignment="CENTER" layoutX="214.0" layoutY="172.0" prefHeight="23.0" prefWidth="72.0" text="0" />
+                              <TextField fx:id="text3" alignment="CENTER" layoutX="376.0" layoutY="172.0" prefHeight="23.0" prefWidth="72.0" text="0" />
+                              <Button layoutX="132.0" layoutY="170.0" mnemonicParsing="false" onAction="#add1" prefHeight="26.0" prefWidth="28.0" style="-fx-background-radius: 150;" text="+" />
+                              <Button layoutX="14.0" layoutY="170.0" mnemonicParsing="false" onAction="#minus1" prefHeight="26.0" prefWidth="28.0" style="-fx-background-radius: 150;" text="-" />
+                              <Button layoutX="295.0" layoutY="170.0" mnemonicParsing="false" onAction="#add2" prefHeight="26.0" prefWidth="28.0" style="-fx-background-radius: 150;" text="+" />
+                              <Button layoutX="177.0" layoutY="170.0" mnemonicParsing="false" onAction="#minus2" prefHeight="26.0" prefWidth="28.0" style="-fx-background-radius: 150;" text="-" />
+                              <Button layoutX="457.0" layoutY="170.0" mnemonicParsing="false" onAction="#add3" prefHeight="26.0" prefWidth="28.0" style="-fx-background-radius: 150;" text="+" />
+                              <Button layoutX="339.0" layoutY="170.0" mnemonicParsing="false" onAction="#minus3" prefHeight="26.0" prefWidth="28.0" style="-fx-background-radius: 150;" text="-" />
+                           </children>
+                        </AnchorPane>
+                  </content>
+                </Tab>
+                <Tab text="蛋糕">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #e4cdcd;">
+                           <children>
+                              <ImageView fitHeight="109.0" fitWidth="146.0" layoutX="20.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="177.0" />
+                              <ImageView fitHeight="109.0" fitWidth="146.0" layoutX="177.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true" />
+                              <ImageView fitHeight="109.0" fitWidth="146.0" layoutX="339.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="177.0" AnchorPane.rightAnchor="333.2" />
+                              <ImageView fitHeight="109.0" fitWidth="146.0" layoutX="14.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@a4f001c41ab188029e757d8c4deff25e.jpg" />
+                                 </image></ImageView>
+                              <ImageView fitHeight="109.0" fitWidth="146.0" layoutX="177.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@resize.jpg" />
+                                 </image></ImageView>
+                              <ImageView fitHeight="109.0" fitWidth="146.0" layoutX="339.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@DSC_2845.jpg" />
+                                 </image></ImageView>
+                              <Label fx:id="good4" layoutX="64.0" layoutY="145.0" text="布朗尼" textFill="#2f4a66">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font></Label>
+                              <Label fx:id="good5" layoutX="220.0" layoutY="145.0" text="千層蛋糕" textFill="#2f4a66">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font></Label>
+                              <Label fx:id="good6" layoutX="389.0" layoutY="145.0" text="瑪德蓮" textFill="#2f4a66">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font></Label>
+                              <TextField fx:id="text4" alignment="CENTER" layoutX="51.0" layoutY="172.0" prefHeight="23.0" prefWidth="72.0" text="0" />
+                              <TextField fx:id="text5" alignment="CENTER" layoutX="214.0" layoutY="172.0" prefHeight="23.0" prefWidth="72.0" text="0" />
+                              <TextField fx:id="text6" alignment="CENTER" layoutX="376.0" layoutY="172.0" prefHeight="23.0" prefWidth="72.0" text="0" />
+                              <Button layoutX="132.0" layoutY="170.0" mnemonicParsing="false" onAction="#add4" prefHeight="26.0" prefWidth="28.0" style="-fx-background-radius: 150;" text="+" />
+                              <Button layoutX="14.0" layoutY="170.0" mnemonicParsing="false" onAction="#minus4" prefHeight="26.0" prefWidth="28.0" style="-fx-background-radius: 150;" text="-" />
+                              <Button layoutX="295.0" layoutY="170.0" mnemonicParsing="false" onAction="#add5" prefHeight="26.0" prefWidth="28.0" style="-fx-background-radius: 150;" text="+" />
+                              <Button layoutX="177.0" layoutY="170.0" mnemonicParsing="false" onAction="#minus5" prefHeight="26.0" prefWidth="28.0" style="-fx-background-radius: 150;" text="-" />
+                              <Button layoutX="457.0" layoutY="170.0" mnemonicParsing="false" onAction="#add6" prefHeight="26.0" prefWidth="28.0" style="-fx-background-radius: 150;" text="+" />
+                              <Button layoutX="339.0" layoutY="170.0" mnemonicParsing="false" onAction="#minus6" prefHeight="26.0" prefWidth="28.0" style="-fx-background-radius: 150;" text="-" />
+                           </children></AnchorPane>
+                  </content>
+                </Tab>
+                  <Tab text="其他">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="171.0" prefWidth="354.0" style="-fx-background-color: #e4cdcd;">
+                           <children>
+                              <ImageView fitHeight="109.0" fitWidth="146.0" layoutX="20.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true" />
+                              <ImageView fitHeight="109.0" fitWidth="146.0" layoutX="20.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true" />
+                              <ImageView fitHeight="109.0" fitWidth="146.0" layoutX="14.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@20171225134948-3cbdf116.jpg" />
+                                 </image></ImageView>
+                              <ImageView fitHeight="109.0" fitWidth="146.0" layoutX="177.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@7107a964147dda52.jpg" />
+                                 </image></ImageView>
+                              <ImageView fitHeight="109.0" fitWidth="146.0" layoutX="339.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@bd2722394b6f362341f59143c755fe5d.jpg" />
+                                 </image></ImageView>
+                              <Label fx:id="good7" layoutX="57.0" layoutY="145.0" text="閃電泡芙" textFill="#2f4a66">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font></Label>
+                              <Label fx:id="good8" layoutX="227.0" layoutY="145.0" text="舒芙蕾" textFill="#2f4a66">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font></Label>
+                              <Label fx:id="good9" layoutX="389.0" layoutY="145.0" text="烤布蕾" textFill="#2f4a66">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font></Label>
+                              <TextField fx:id="text7" alignment="CENTER" layoutX="51.0" layoutY="172.0" prefHeight="23.0" prefWidth="72.0" text="0" />
+                              <TextField fx:id="text8" alignment="CENTER" layoutX="214.0" layoutY="172.0" prefHeight="23.0" prefWidth="72.0" text="0" />
+                              <TextField fx:id="text9" alignment="CENTER" layoutX="376.0" layoutY="172.0" prefHeight="23.0" prefWidth="72.0" text="0" />
+                              <Button layoutX="295.0" layoutY="170.0" mnemonicParsing="false" onAction="#add8" prefHeight="26.0" prefWidth="28.0" style="-fx-background-radius: 150;" text="+" />
+                              <Button layoutX="177.0" layoutY="170.0" mnemonicParsing="false" onAction="#minus8" prefHeight="26.0" prefWidth="28.0" style="-fx-background-radius: 150;" text="-" />
+                              <Button layoutX="457.0" layoutY="170.0" mnemonicParsing="false" onAction="#add9" prefHeight="26.0" prefWidth="28.0" style="-fx-background-radius: 150;" text="+" />
+                              <Button layoutX="339.0" layoutY="170.0" mnemonicParsing="false" onAction="#minus9" prefHeight="26.0" prefWidth="28.0" style="-fx-background-radius: 150;" text="-" />
+                              <Button layoutX="131.0" layoutY="170.0" mnemonicParsing="false" onAction="#add7" prefHeight="26.0" prefWidth="28.0" style="-fx-background-radius: 150;" text="+" />
+                              <Button layoutX="13.0" layoutY="170.0" mnemonicParsing="false" onAction="#minus7" prefHeight="26.0" prefWidth="28.0" style="-fx-background-radius: 150;" text="-" />
+                           </children></AnchorPane>
+                    </content>
+                  </Tab>
+              </tabs>
+            </TabPane>
+            <Label layoutX="362.0" layoutY="349.0" text="取餐號碼:" textFill="#2f4a66">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="orderNumber" layoutX="446.0" layoutY="349.0" text="-" textFill="#2f4a66">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Pane layoutX="522.0" layoutY="14.0" prefHeight="421.0" prefWidth="255.0" style="-fx-background-color: #b9cde1;">
+               <children>
+                  <Label layoutX="38.0" text="ORDER FORM" textFill="#ea8383">
+                     <font>
+                        <Font name="Serif Bold" size="25.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="23.0" layoutY="374.0" mnemonicParsing="false" onAction="#order" text="點餐" textFill="#b16161">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+                  <Line endX="100.0" layoutX="131.0" layoutY="367.0" startX="-100.0" stroke="#b16161" />
+                  <Label layoutX="25.0" layoutY="337.0" text="TOTAL:" textFill="#b16161">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="totalPrice" layoutX="82.0" layoutY="335.0" prefHeight="25.0" prefWidth="139.0" style="-fx-background-color: #ccddef;" />
+                  <Button layoutX="147.0" layoutY="372.0" mnemonicParsing="false" onAction="#orderUndo" text="全部清空" textFill="#b16161">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+                  <Label fx:id="order2" layoutX="21.0" layoutY="55.0" text="-" textFill="#b16161">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="order3" layoutX="21.0" layoutY="88.0" text="-" textFill="#b16161">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="order4" layoutX="21.0" layoutY="121.0" text="-" textFill="#b16161">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="order5" layoutX="21.0" layoutY="153.0" text="-" textFill="#b16161">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="order6" layoutX="21.0" layoutY="187.0" text="-" textFill="#b16161">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="order7" layoutX="21.0" layoutY="221.0" text="-" textFill="#b16161">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <ScrollBar layoutX="248.0" orientation="VERTICAL" prefHeight="369.0" prefWidth="15.0" value="50.0" />
+                  <TextField fx:id="orderQ2" layoutX="103.0" layoutY="54.0" prefHeight="23.0" prefWidth="81.0" />
+                  <TextField fx:id="orderQ3" layoutX="103.0" layoutY="87.0" prefHeight="23.0" prefWidth="81.0" />
+                  <TextField fx:id="orderQ4" layoutX="103.0" layoutY="120.0" prefHeight="23.0" prefWidth="81.0" />
+                  <TextField fx:id="orderQ5" layoutX="103.0" layoutY="152.0" prefHeight="23.0" prefWidth="81.0" />
+                  <TextField fx:id="orderQ6" layoutX="103.0" layoutY="186.0" prefHeight="23.0" prefWidth="81.0" />
+                  <TextField fx:id="orderQ7" layoutX="103.0" layoutY="220.0" prefHeight="23.0" prefWidth="81.0" />
+                  <Label fx:id="order1" layoutX="21.0" layoutY="27.0" text="-" textFill="#b16161">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="order8" layoutX="21.0" layoutY="257.0" text="-" textFill="#b16161">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="order9" layoutX="21.0" layoutY="293.0" text="-" textFill="#b16161">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="orderQ8" layoutX="103.0" layoutY="255.0" prefHeight="23.0" prefWidth="81.0" />
+                  <TextField fx:id="orderQ9" layoutX="103.0" layoutY="290.0" prefHeight="23.0" prefWidth="81.0" />
+                  <TextField fx:id="orderQ51" layoutX="290.0" layoutY="303.0" prefHeight="23.0" prefWidth="81.0" />
+                  <TextField fx:id="orderQ1" layoutX="103.0" layoutY="25.0" prefHeight="23.0" prefWidth="81.0" />
+               </children>
+            </Pane>
+            <Button layoutX="28.0" layoutY="339.0" mnemonicParsing="false" onAction="#switchToLogin" prefHeight="40.0" prefWidth="220.0" text="前往後台" textFill="#cc3636">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

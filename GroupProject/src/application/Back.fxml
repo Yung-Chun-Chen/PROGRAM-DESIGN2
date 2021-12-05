@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollBar?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="578.0" prefWidth="449.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <AnchorPane layoutX="24.0" layoutY="24.0" />
+      <TabPane layoutX="24.0" layoutY="24.0" prefHeight="553.0" prefWidth="499.0" tabClosingPolicy="UNAVAILABLE">
+         <tabs>
+            <Tab text="訂單">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Pane layoutY="1.0" prefHeight="522.0" prefWidth="499.0" style="-fx-background-color: #b9cde1;">
+                           <children>
+                              <Label layoutX="38.0" text="ORDER FORM" textFill="#ea8383">
+                                 <font>
+                                    <Font name="Serif Bold" size="25.0" />
+                                 </font>
+                              </Label>
+                              <ScrollBar layoutX="485.0" layoutY="3.0" orientation="VERTICAL" prefHeight="516.0" prefWidth="14.0" />
+                              <Button layoutX="290.0" layoutY="475.0" mnemonicParsing="false" onAction="#switchToLogin" prefHeight="33.0" prefWidth="194.0" text="回前台" textFill="#4682f2">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Button>
+                              <Pane layoutX="14.0" layoutY="29.0" prefHeight="200.0" prefWidth="200.0" />
+                              <Button layoutX="110.0" layoutY="129.0" mnemonicParsing="false" onAction="#gotoScenceOrder" prefHeight="155.0" prefWidth="280.0" text="訂單查詢" textFill="#1606f8">
+                                 <font>
+                                    <Font size="28.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </Pane>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="銷量成長">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="155.0" prefWidth="446.0">
+                     <children>
+                        <Button layoutX="61.0" layoutY="109.0" mnemonicParsing="false" onAction="#sales" text="蘋果派" />
+                        <Button layoutX="225.0" layoutY="109.0" mnemonicParsing="false" onAction="#sales" text="檸檬塔" />
+                        <Button layoutX="387.0" layoutY="109.0" mnemonicParsing="false" onAction="#sales" text="國王派" />
+                        <Button layoutX="61.0" layoutY="71.0" mnemonicParsing="false" onAction="#sales" text="布朗尼" />
+                        <Button layoutX="219.0" layoutY="71.0" mnemonicParsing="false" onAction="#sales" text="千層蛋糕" />
+                        <Button layoutX="387.0" layoutY="71.0" mnemonicParsing="false" onAction="#sales" text="瑪德蓮" />
+                        <Button layoutX="218.0" layoutY="35.0" mnemonicParsing="false" onAction="#sales" text="閃電泡芙" />
+                        <Button layoutX="60.0" layoutY="35.0" mnemonicParsing="false" onAction="#sales" text="舒芙蕾" />
+                        <Button layoutX="386.0" layoutY="35.0" mnemonicParsing="false" onAction="#sales" text="烤布蕾" />
+                        <ImageView fitHeight="325.0" fitWidth="468.0" layoutX="16.0" layoutY="187.0" pickOnBounds="true" preserveRatio="true" />
+                        <Button mnemonicParsing="false" onAction="#switchToLogin" prefHeight="17.0" prefWidth="80.0" text="回前台" textFill="#4682f2">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Button>
+                        <AnchorPane fx:id="pane" layoutX="151.0" layoutY="213.0" prefHeight="200.0" prefWidth="200.0" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+         </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
